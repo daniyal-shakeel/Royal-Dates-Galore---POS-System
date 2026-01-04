@@ -28,6 +28,7 @@ const calculateDueDate = (paymentTerms: string, invoiceDate: Date = new Date()):
     // Default to 30 days if no number found
     dueDate.setDate(dueDate.getDate() + 30);
     return dueDate;
+    
 };
 
 export const createInvoice = async (req: Request, res: Response) => {
